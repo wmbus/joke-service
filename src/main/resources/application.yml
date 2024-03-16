@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: joke-service
+
+logging:
+  level:
+    root: info
+    nl:
+      ordina:
+        jtech:
+          wmbus: info
+
+server:
+  servlet:
+    context-path: /joke-service
+
+jokeapi:
+  url: https://v2.jokeapi.dev/joke/Any?type=single&amount={amount}
+  amount: 16

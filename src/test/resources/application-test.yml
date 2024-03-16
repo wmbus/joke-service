@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: joke-service
+
+logging:
+  level:
+    root: info
+    nl:
+      ordina:
+        jtech:
+          wmbus: debug
+
+server:
+  servlet:
+    context-path: /joke-service
+
+jokeapi:
+  url: http://localhost:8932/joke/Any?type=single&amount={amount}
+  amount: 16
